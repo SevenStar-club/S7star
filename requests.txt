@@ -1,0 +1,2 @@
+apt-get install python-MySQLdb
+apt-get install python-flask

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta content="32syDJq7oX" name="baidu-site-verification"/>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+        {% if title %}
+        <title>
+            {{title}} - 在线渗透平台
+        </title>
+        {% else %}
+        <title>
+            在线渗透平台
+        </title>
+        {% endif %}
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+            <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+                <meta content="telephone=no" name="format-detection">
+                    <meta content="webkit" name="renderer">
+                        <meta content="no-siteapp" http-equiv="Cache-Control"/>
+                        <link href="assets/i/favicon.png" rel="alternate icon" type="image/png">
+                              <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='amazeui.min.css')}}">
+                    <!--         <link href="http://cdn.amazeui.org/amazeui/2.2.1/css/amazeui.min.css" rel="stylesheet"/> -->
+                            <link href="{{url_for('static',filename='style.css')}}" rel="stylesheet" type="text/css">
+                                <script src="{{url_for('static',filename='jquery.min.js')}}">
+                                </script>
+                            </link>
+                        </link>
+                    </meta>
+                </meta>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <header class="am-topbar am-topbar-fixed-top" data-am-sticky="">
+            <div class="am-container">
+                <h1 class="am-topbar-brand">
+                    <a href="#">
+                        {% if title %}
+                        <title>
+                            {{title}}
+                        </title>
+                        {% else %}
+                        <title>
+                            在线渗透平台
+                        </title>
+                        {% endif %}
+                    </a>
+                </h1>
+                <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target: '#collapse-head'}">
+                    <span class="am-sr-only">
+                        导航切换
+                    </span>
+                    <span class="am-icon-bars">
+                    </span>
+                </button>
+                <script>
+                    (function($) {
+  'use strict';
+
+  $(function() {
+    var $fullText = $('.admin-fullText');
+    $('#admin-fullscreen').on('click', function() {
+      $.AMUI.fullscreen.toggle();
+    });
+
+    $(document).on($.AMUI.fullscreen.raw.fullscreenchange, function() {
+      $.AMUI.fullscreen.isFullscreen ? $fullText.text('关闭全屏') : $fullText.text('开启全屏');
+    });
+  });
+})(jQuery);
+                </script>
+                <div class="am-collapse am-topbar-collapse" id="collapse-head">
+                    <ul class="am-nav am-nav-pills am-topbar-nav">
+                        <li>
+                            <a href="/struct">
+                                <span class="am-icon-skyatlas">
+                                </span>
+                                <span class="admin-fullText">
+                                    主页
+                                </span>
+                            </a>
+                        </li>
+                        <!--     <li><a href="/webdna"><span class="am-icon-windows"></span> CMS识别</a></li> -->
+                        <!--          <li><a href="/whois"><span class="am-icon-cube"></span> whois查询</a></li>
+          <li><a href="/ip"><span class="am-icon-cube"></span> ip查询</a></li> -->
+                        <!--        <li><a href="/struct"><span class="am-icon-cube"></span> s2_045漏洞检测</a></li> -->
+                        <!--     信息采集 -->
+                        <li class="am-dropdown" data-am-dropdown="">
+                            <a class="am-dropdown-toggle" data-am-dropdown-toggle="" href="javascript:;">
+                                <span class="am-icon-cube">
+                                </span>
+                                信息采集
+                                <span class="am-icon-caret-down">
+                                </span>
+                            </a>
+                            <ul class="am-dropdown-content">
+                                <li>
+                                    <a href="/">
+                                        whois查询
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        ip查询
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        CMS识别
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        谷歌hacking
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        ZoomEye搜索
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/password">
+                                <span class="am-icon-cube">
+                                </span>
+                                社工密码生成
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <span class="am-icon-cube">
+                                </span>
+                                社工库
+                            </a>
+                        </li>
+                        <!-- 漏洞检测利用 -->
+                        <li class="am-dropdown" data-am-dropdown="">
+                            <a class="am-dropdown-toggle" data-am-dropdown-toggle="" href="javascript:;">
+                                <span class="am-icon-cube">
+                                </span>
+                                漏洞利用
+                                <span class="am-icon-caret-down">
+                                </span>
+                            </a>
+                            <ul class="am-dropdown-content">
+                                <li>
+                                    <a href="/sqlapi">
+                                        注入检测
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/struct">
+                                        s7-045漏洞检测
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/nsascan">
+                                        NSA漏洞在线检测
+                                    </a>
+                                </li>
+                                <!--      <li><a href="/webdna"> CMS识别</a></li> -->
+                            </ul>
+                        </li>
+                        <!-- 漏洞查询 -->
+   <!--                      <li class="am-dropdown" data-am-dropdown="">
+                            <a class="am-dropdown-toggle" data-am-dropdown-toggle="" href="javascript:;">
+                                <span class="am-icon-cube">
+                                </span>
+                                漏洞bugs
+                                <span class="am-icon-caret-down">
+                                </span>
+                            </a>
+                            <ul class="am-dropdown-content">
+                                <li>
+                                    <a href="/wooyun">
+                                        漏洞搜索
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/wooyun1">
+                                        忽略漏洞
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> -->
+                        <li><a href="http://wooyun.sevenstar.club/"><span class="am-icon-windows"></span> 漏洞搜索</a></li>
+                        <li>
+                            <a href="javascript:;" id="admin-fullscreen">
+                                <span class="am-icon-arrows-alt">
+                                </span>
+                                <span class="admin-fullText">
+                                    开启全屏
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="am-topbar-right">
+                        <li class="am-dropdown" data-am-dropdown="">
+                            <button class="am-btn am-btn-default am-topbar-btn am-btn-sm am-dropdown-toggle" data-am-dropdown-toggle="">
+                                Admin Test
+                                <span class="am-icon-caret-down">
+                                </span>
+                            </button>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
+<ul class="am-dropdown-content">
+    <li class="am-dropdown-header">
+        设置
+    </li>
+    <li>
+        <a href="">
+            用户中心(未做)
+        </a>
+    </li>
+    <li>
+        <a href="">
+            退出登陆
+        </a>
+    </li>
+</ul>
+{% block content %}{% endblock %}
+<div class="am-g am-container">
+</div>
+<footer class="footer">
+    <p>
+        <a href="http://www.s7star.cn">
+            © 七星网络攻防平台
+        </a>
+    </p>
+</footer>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/polyfill/rem.min.js"></script>
+<script src="assets/js/polyfill/respond.min.js"></script>
+<script src="assets/js/amazeui.legacy.js"></script>
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!-- <script src="http://cdn.amazeui.org/amazeui/2.2.1/js/amazeui.min.js">
+</script> -->
+
+<script src="{{url_for('static',filename='amazeui.min.js')}}"></script>
+<!--<![endif]-->
